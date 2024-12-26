@@ -1,9 +1,3 @@
-/*===========================================
-        GRRLIB (GX Version)
-        - Template Code -
-
-        Minimum Code To Use GRRLIB
-============================================*/
 #include <grrlib.h>
 
 #include <stdlib.h>

@@ -48,7 +48,9 @@ int main(int argc, char **argv) {
         GRRLIB_DrawTile(410,120,TaikoNotes,0,0.5,0.5,0xFFFFFFFF,0);
         GRRLIB_DrawTile(410,50,TaikoNotes,0,0.5,0.5,0xFFFFFFFF,1);
         // text
-            GRRLIB_PrintfTTF(130,40,TaikoFont,"I'm on a wii! Da-don!" ,24,0x000000FF); // white 0xFFFFFFFF // black 0x000000FF //
+        if(exp_type != WPAD_EXP_CLASSIC) {
+            GRRLIB_PrintfTTF(130,40,TaikoFont,"Please connect a tatacon or a classic controller" ,24,0x000000FF); // white 0xFFFFFFFF // black 0x000000FF //
+            }
         GRRLIB_PrintfTTF(490,130,TaikoFont, DON_disp ,20,0x000000FF);
         GRRLIB_PrintfTTF(490,60,TaikoFont, KAT_disp ,20,0x000000FF);
         // input

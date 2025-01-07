@@ -29,6 +29,8 @@ int main(int argc, char **argv) {
             sprintf(KAT_disp, "%d", KAT);
     // Initialise the Wiimotes
     WPAD_Init();
+    u32 exp_type;
+    WPAD_Probe(0, &exp_type);
 
     // Loop forever
     while(1) {
